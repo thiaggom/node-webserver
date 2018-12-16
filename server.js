@@ -2,6 +2,7 @@ const express = require('express');
 const hbs = require('hbs');
 const fs = require('fs');
 
+// recovery serverport from env variable or use 4000 as default
 const webPort = process.env.PORT || 4000;
 
 var app = express();
