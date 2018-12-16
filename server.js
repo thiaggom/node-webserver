@@ -55,6 +55,12 @@ app.get("/persons", (req, res) => {
     });
 } )
 
+app.get("/projects", (req, res) => {
+    res.render("projects.hbs", {
+        pageTitle: "Projects"
+    });
+});
+
 app.get("/photo", (req, res) => {
     res.sendFile("/home/tmelo/Pictures/batman.jpeg");
 });
